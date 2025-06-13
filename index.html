@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Tokoh Idola</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: transparent; }
+    .container { width: 100%; max-width: 600px; margin: 0 auto; background: transparent; padding: 20px; border-radius: 10px; }
+    h1 { text-align: center; color: #333; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    textarea, input[type="text"] { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+    button { margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; width: 100%; max-width: 200px; display: block; margin-left: auto; margin-right: auto; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="thankyou.html" method="get">
+      <label for="tokoh">1. Tulis salah satu tokoh idola kalian!</label>
+      <input type="text" id="tokoh" name="tokoh" required>
+
+      <label for="pencapaian">2. Sebutkan ragam pencapaian mereka! Pisahkan tiap poin dengan titik</label>
+      <textarea id="pencapaian" name="pencapaian" rows="4" required></textarea>
+
+      <label for="positif">3. Sebutkan hal-hal positif yang dapat dicontoh dari tokoh tersebut!</label>
+      <textarea id="positif" name="positif" rows="4" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</body>
+</html>
